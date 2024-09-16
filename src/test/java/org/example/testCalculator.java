@@ -95,4 +95,50 @@ class testCalculator {
 
         assertEquals(expectedResult, actualResult);
     }
+
+    // unit tests for multiplication
+    @Test
+    void testValidMultiplicationTwoValues() {
+        double x = 5;
+        double y = 8;
+        double expectedResult = 40;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.multiplication(x, y);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testValidMultiplicationNegativeValue() {
+        double x = -5, y = 8;
+        double expectedResult = -40.0;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.multiplication(x, y);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testValidMultiplicationMultipleValues(){
+        double x = 3, y = 5, z = 9, i = 8, j = 6;
+        double expectedResult = 6480;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.multiplication(x, y, z, i, j);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testValidMultiplicationFloatValues(){
+        double x = 3.83, y = 5.934, z = 9, i = 8.7, j = 6;
+        double expectedResult = 10677.247956;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.multiplication(x, y, z, i, j);
+
+        assertEquals(expectedResult, actualResult);
+    }
 }

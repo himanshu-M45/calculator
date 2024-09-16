@@ -19,4 +19,12 @@ public class Calculator {
         }
         return sub;
     }
+
+    public double multiplication(double x, double... nums) {
+        double mul = x;
+        for (double num: nums) {
+            mul *= num;
+        }
+        return mul;
+    }
 }

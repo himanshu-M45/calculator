@@ -10,5 +10,8 @@ public class Main {
 
         // subtraction
         System.out.println(calculator.subtraction(4, 6));
+
+        // multiplication
+        System.out.println(calculator.multiplication(4, 6));
     }
 }
