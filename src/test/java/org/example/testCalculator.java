@@ -49,4 +49,50 @@ class testCalculator {
 
         assertEquals(expectedResult, actualResult);
     }
+
+//    unit tests for subtraction
+    @Test
+    void testValidSubtractionTwoValues() {
+        double x = 5;
+        double y = 8;
+        double expectedResult = -3;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.subtraction(x, y);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testValidSubtractionSingleNegativeValue() {
+        double x = -5, y = 8;
+        double expectedResult = -13;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.subtraction(x, y);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testValidSubtractionMultipleNegativeValues() {
+        double x = -5, y = 8, z = -9, i = -8, j = 6;
+        double expectedResult = -2;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.subtraction(x, y, z, i, j);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testValidSubtractionFloatValues(){
+        double x = 3.83, y = 5.934, z = 9, i = 8.7, j = 6;
+        double expectedResult = -25.804;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.subtraction(x, y, z, i, j);
+
+        assertEquals(expectedResult, actualResult);
+    }
 }

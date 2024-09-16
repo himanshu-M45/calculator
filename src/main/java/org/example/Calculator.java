@@ -11,4 +11,12 @@ public class Calculator {
         }
         return sum;
     }
+
+    public double subtraction(double x, double... nums) {
+        double sub = x;
+        for (double num: nums) {
+            sub -= num;
+        }
+        return sub;
+    }
 }

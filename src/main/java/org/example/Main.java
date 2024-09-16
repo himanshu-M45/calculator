@@ -7,5 +7,8 @@ public class Main {
 
         // addition
         System.out.println(calculator.addition(4, 6));
+
+        // subtraction
+        System.out.println(calculator.subtraction(4, 6));
     }
 }
