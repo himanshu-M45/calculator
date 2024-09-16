@@ -27,4 +27,12 @@ public class Calculator {
         }
         return mul;
     }
+
+    public double division(double x, double... nums) {
+        double div = x;
+        for (double num: nums) {
+            div /= num;
+        }
+        return div;
+    }
 }

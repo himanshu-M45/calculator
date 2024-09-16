@@ -141,4 +141,50 @@ class testCalculator {
 
         assertEquals(expectedResult, actualResult);
     }
+
+    // unit tests for division
+    @Test
+    void testValidDivisionTwoValues() {
+        double x = 5;
+        double y = 8;
+        double expectedResult = 0.625;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.division(x, y);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testValidDivisionNegativeValue() {
+        double x = -5, y = 8;
+        double expectedResult = -0.625;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.division(x, y);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testValidDivisionMultipleValues(){
+        double x = 78, y = 5, z = 4, i = 3, j = 2;
+        double expectedResult = 0.65;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.division(x, y, z, i, j);
+
+        assertEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    void testValidDivisionFloatValues(){
+        double x = 279.8, y = 5.934, z = 2;
+        double expectedResult = 23.576002696326256;
+        Calculator calculator = new Calculator();
+
+        double actualResult = calculator.division(x, y, z);
+
+        assertEquals(expectedResult, actualResult);
+    }
 }

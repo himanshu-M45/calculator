@@ -13,5 +13,8 @@ public class Main {
 
         // multiplication
         System.out.println(calculator.multiplication(4, 6));
+
+        // division
+        System.out.println(calculator.division(8, 6));
     }
 }
