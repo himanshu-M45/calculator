@@ -4,7 +4,8 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class testCalculator {
+class CalculatorTest {
+    // unit tests for addition
     @Test
     void testValidAdditionTwoValues() {
         double x = 5;
@@ -50,7 +51,7 @@ class testCalculator {
         assertEquals(expectedResult, actualResult);
     }
 
-//    unit tests for subtraction
+    //    unit tests for subtraction
     @Test
     void testValidSubtractionTwoValues() {
         double x = 5;
